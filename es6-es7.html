@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body> 
+    <p id="demo"></p>
     <script>  
     //ES5
     var sumES5 = function(a,b) {
@@ -16,12 +17,16 @@
     console.log(res);
 
     //ES6
-    const sumES6 = (a, b) => a + b;
-
+    /*const sumES6 = (a, b) => a + b;
     result = sumES6(40,20);
-    console.log(result);
+    console.log(result);*/
 
+    /*const sumES6 = (a, b) => { return a + b};
+    result = sumES6(40,20);
+    console.log(result);*/
 
+    const sumES6 = (a, b) => { return a + b};
+    document.getElementById("demo").innerHTML = sumES6(8,9);
 
     </script>
 
