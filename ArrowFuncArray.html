@@ -26,10 +26,35 @@
     /*const oddNumbers = numbers.filter((num) => num % 2 ==1);
     console.log(oddNumbers);*/
 
+    /*const oddNumbers = numbers.map((num) => num % 2 ==1);
+    CoddNumbers);*/
 
-    let printed = numbers[4];
-    document.getElementById("demo").innerHTML = printed;
+    const products = [
+        {productName: "phone1", price: 12000},
+        {productName: "phone2", price: 15000},
+        {productName: "phone3", price: 18000},
+        {productName: "phone4", price: 21000}
+
+    ];
+
+    /*const res = products.filter(product => product.price > 15000);
+    console.log(res);*/
+ 
+    /*const filteredProducts = products.filter(product => product.price > 15000);
+    res = filteredProducts.map(product => product.productName);
+    console.log(res);*/
+
+    //const res = products.filter(product => product.price >= 15000).map(product => product.productName);
+    //console.log(res);
+
+    //const res = products.find(product => product.price > 18000);
+    //console.log(res);
     
+    const res = products.findIndex(product => product.price > 18000);
+    console.log(res);
+
+
+
     </script>
 
 </body>
